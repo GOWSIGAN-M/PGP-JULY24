@@ -1,0 +1,122 @@
+ /* <uniquifier>:Use a unique and descriptive class name
+ <weight>:Use a value from 100 to 900 */
+
+ 
+ /* html-body initialization*/
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+    font-size: 20px;
+}
+
+/* google font import */
+.inter-<uniquifier> {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+
+/*----------------------------------------- main section -------------------------------------------*/
+
+main{
+    background-color: #ffcd9e;
+}
+
+/* main section flex customization */
+.main-container{
+    margin: 0;
+    display: flex;
+    height: 75vh;
+}
+
+/* main section 1st division - contentpart */
+
+.contentpart{
+    width: 50%;
+    padding: 2em 6em;
+    padding-right: 0em;
+}
+
+/* text elements customization */
+h1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5em;
+    color:#282828
+}
+
+h4{
+    font-weight: 800;
+    color: #282828;
+}
+
+p{
+    color: #484848;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+/* form input css customization */
+input{
+    height: 3em;
+    width:17em;
+    border:4px solid black;
+    border-radius: 10px;
+}
+
+/* button customization */
+input[type=button]{
+    width: 10em;
+    background-color: black;
+    color: white;
+}
+
+#fixed{
+    color: white;
+    font-size: smaller;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* main section 2nd division - picture part */
+
+.picpart{
+    padding-left: 0em;
+    flex-grow: 1.5;
+    
+}
+
+.picpart img{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3em;    
+}
+
+/*--------------------------------------------------- footer section -----------------------------------------------*/
+
+footer{
+    background-color: #282828;
+}
+
+/* footer section flex customization */
+.footer-container{
+    height: 25fvh;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2em 8em 2em 8em;
+    line-height: 1.75em;
+}
+
+.footer-container .address{
+    text-align: right;
+}
+
+/* footer section anchor tag css customization */
+.details a{
+    text-decoration: none;
+    color: white;
+}

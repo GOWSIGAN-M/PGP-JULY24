@@ -127,7 +127,7 @@ input[type=button]{
 /* --------------------------------------------media queries---------------------------------------------------- */
 
 /* media queries for mobile and tablets */
-@media all and (min-width:610px) and (max-width:979px) {
+@media all and (min-width:610px) and (max-width:1000px) {
     .main-container,.footer-container{
         flex-direction: column;
     }

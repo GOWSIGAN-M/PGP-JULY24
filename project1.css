@@ -126,8 +126,8 @@ input[type=button]{
 
 /* --------------------------------------------media queries---------------------------------------------------- */
 
-/* media queries for mobile and mid-sized-tablets */
-@media all and (min-width:375px) and (max-width:979px) {
+/* media queries for mobile and tablets */
+@media all and (min-width:610px) and (max-width:979px) {
     .main-container,.footer-container{
         flex-direction: column;
     }
@@ -147,18 +147,49 @@ input[type=button]{
 }
 
 /* media queries for below average mobile displays */
-@media all and (max-width:374px){
+@media all and (max-width:389px){
     body *{
         display: none;
     }
     body .lessscreen{
-        display: block;
+        display: inline-block;
         visibility: visible;
     }
 }
 
 /* for inappropriate screen */
 .lessscreen{
-    display: none;
     visibility: hidden;
+    display: none;
 }
+
+/* media queries for mobile displays */
+@media all and (min-width:390px) and (max-width:609px){
+    .mailinfo{
+        display: block;
+      }
+      
+    .mailinfo td{
+        float: left;
+        width: 100%;
+        clear: left;
+      }
+      .main-container,.footer-container{
+        flex-direction: column;
+        padding-left: 0em;
+    }
+
+    .footer-container{
+        justify-content: center;
+        padding: 2em;
+    }
+
+    .footer-container .address{
+        text-align: left;
+    }
+
+    input{
+        width:13em;
+    }
+
+    }

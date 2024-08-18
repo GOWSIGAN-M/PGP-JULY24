@@ -126,8 +126,8 @@ input[type=button]{
 
 /* --------------------------------------------media queries---------------------------------------------------- */
 
-/* media queries for mobile and tablets */
-@media all and (min-width:640px) and (max-width:979px) {
+/* media queries for mobile and mid-sized-tablets */
+@media all and (min-width:375px) and (max-width:979px) {
     .main-container,.footer-container{
         flex-direction: column;
     }
@@ -147,7 +147,7 @@ input[type=button]{
 }
 
 /* media queries for below average mobile displays */
-@media all and (max-width:639px){
+@media all and (max-width:374px){
     body *{
         display: none;
     }
